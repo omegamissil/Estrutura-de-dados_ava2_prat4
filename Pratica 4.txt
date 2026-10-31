@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float valorBusca;
+    int encontrado = 0;
+
+    printf("Quantidade de elementos da lista: ");
+    scanf("%d", &n);
+
+    float lista[n];
+
+    printf("\nDigite os valores da lista:\n");
+    for (i = 0; i < n; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%f", &lista[i]);
+    }
+
+    printf("\nDigite o valor que deseja buscar: ");
+    scanf("%f", &valorBusca);
+
+    for (i = 0; i < n; i++) {
+        if (lista[i] == valorBusca) {
+            encontrado = 1;
+            printf("\nValor %.2f encontrado na posicao %d da lista.\n",
+                   valorBusca, i + 1);
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        printf("\nValor %.2f nao encontrado na lista.\n", valorBusca);
+    }
+
+    return 0;
+}
