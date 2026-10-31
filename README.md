@@ -1,0 +1,1 @@
+Implementação em linguagem C de um algoritmo de busca sequencial (ou linear). O programa lê dinamicamente uma quantidade de números reais (float) informada pelo usuário, armazena em um vetor, solicita um valor de busca e percorre a lista para verificar se o elemento está presente, exibindo a respectiva posição caso seja encontrado.
